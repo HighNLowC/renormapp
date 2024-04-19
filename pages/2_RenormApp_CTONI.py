@@ -4,7 +4,7 @@ import streamlit as st
 from pandas.api.types import is_numeric_dtype
 
 # Page Config
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide",page_title="FAC Renorm App v1 - CTONI")
 
 # Header
 st.header('CTONI IQ Classification App')
