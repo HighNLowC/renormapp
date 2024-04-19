@@ -14,6 +14,10 @@
 
 import streamlit as st
 
+# Page Config
+
+st.set_page_config(layout="wide",page_title="FAC Renorm App v1")
+
 # Title
 st.title('STAGE & CTONI Renorm App v1 :100:')
 st.divider()
