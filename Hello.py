@@ -29,30 +29,31 @@ st.write('''
          Web ini terdiri dari dua aplikasi:
          ''')       
 st.write('''
-            - I. Pada aplikasi STAGE, user dapat melakukan:
-            - 1) renorm untuk tabel konversi "Sum of Raw Score each Dimension/Facet" menjadi "SCALED SCORE (T)"
-            - 2) renorm untuk tabel konversi 'Average Competency Score' menjadi 'STEN SCORE'.
+          I. Pada aplikasi STAGE, user dapat melakukan:
+          1) renorm untuk tabel konversi "Sum of Raw Score each Dimension/Facet" menjadi "SCALED SCORE (T)"
+          2) renorm untuk tabel konversi 'Average Competency Score' menjadi 'STEN SCORE'.
          
-            - User dapat mengunggah data STAGE peserta bersama dengan padanan kompetensi (pastikan menggunakan \
-              struktur tabulasi yang tepat, atau dapat mengunduh template file .csv)
+          User dapat mengunggah data STAGE peserta bersama dengan padanan kompetensi (pastikan menggunakan \
+          struktur tabulasi yang tepat, atau dapat mengunduh template file .csv)
          ''')
+st.text("")
 st.write('''
-            - II. Pada aplikasi CTONI, user dapat membuat tabel norma klasifikasi skor IQ berdasarkan kategori yang dipilih user. 
+          II. Pada aplikasi CTONI, user dapat membuat tabel norma klasifikasi skor IQ berdasarkan kategori yang dipilih user. 
          
-            - User dapat mengunggah data IQ peserta (pastikan menggunakan struktur tabulasi yang tepat, \
-              atau dapat mengunduh template file .csv)
+          User dapat mengunggah data IQ peserta (pastikan menggunakan struktur tabulasi yang tepat, \
+          atau dapat mengunduh template file .csv)
          ''')
 st.write('''
          Instruksi lebih detail bersama dengan template file .csv data dan contoh file data yang dapat digunakan 
          diaplikasi ini, silakan menekan tombol di bawah ini untuk mengakses folder google drive:
          ''')
+st.text("")
 
 st.link_button(label="Folder Google Drive",url="https://drive.google.com/drive/folders/1c8t1x-NnH-k7UmJHQulLVgXzfX5e93y0?usp=sharing")
-st.divider()
+st.text("")
 
 st.write(''' 
          Jika mendapati kesulitan selama menggunakan aplikasi ini, mohon kontak tim Research and Product Innovation FAC.
         
-         Developer:
-         Ian (RPI) - aplikasi v1\
+         -Ian (RPI) - Dev aplikasi v1\
         ''')
