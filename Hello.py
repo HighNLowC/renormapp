@@ -13,39 +13,46 @@
 # limitations under the License.
 
 import streamlit as st
-from streamlit.logger import get_logger
 
-LOGGER = get_logger(__name__)
+# Title
+st.title('STAGE & CTONI Renorm App v1 :100:')
+st.divider()
 
+st.subheader('Gambaran Aplikasi & Instruksi')
+st.write('''
+         Aplikasi "STAGE & CTONI Renorm App" milik FAC dibuat untuk memudahkan dan mempercepat proses pembuatan norma
+         untuk alat ukur STAGE dan CTONI. Aplikasi ini dirangkai menggunakan bahasa pemrograman Python, menggunakan 
+         framework/package "streamlit".
+         ''')
+st.write('''
+         Untuk mengakses aplikasi, silakan membuka sidebar yang terdapat pada bagian kiri penampang web ini.
+         Web ini terdiri dari dua aplikasi:
+         ''')       
+st.write('''
+            - I. Pada aplikasi STAGE, user dapat melakukan:
+            - 1) renorm untuk tabel konversi "Sum of Raw Score each Dimension/Facet" menjadi "SCALED SCORE (T)"
+            - 2) renorm untuk tabel konversi 'Average Competency Score' menjadi 'STEN SCORE'.
+         
+            - User dapat mengunggah data STAGE peserta bersama dengan padanan kompetensi (pastikan menggunakan \
+              struktur tabulasi yang tepat, atau dapat mengunduh template file .csv)
+         ''')
+st.write('''
+            - II. Pada aplikasi CTONI, user dapat membuat tabel norma klasifikasi skor IQ berdasarkan kategori yang dipilih user. 
+         
+            - User dapat mengunggah data IQ peserta (pastikan menggunakan struktur tabulasi yang tepat, \
+              atau dapat mengunduh template file .csv)
+         ''')
+st.write('''
+         Instruksi lebih detail bersama dengan template file .csv data dan contoh file data yang dapat digunakan 
+         diaplikasi ini, silakan menekan tombol di bawah ini untuk mengakses folder google drive:
+         ''')
 
-def run():
-    st.set_page_config(
-        page_title="Hello",
-        page_icon="👋",
-    )
+st.link_button(label="Folder Google Drive",url="https://drive.google.com/drive/folders/1c8t1x-NnH-k7UmJHQulLVgXzfX5e93y0?usp=sharing")
+st.divider()
 
-    st.write("# Welcome to Streamlit! 👋")
-
-    st.sidebar.success("Select a demo above.")
-
-    st.markdown(
-        """
-        Streamlit is an open-source app framework built specifically for
-        Machine Learning and Data Science projects.
-        **👈 Select a demo from the sidebar** to see some examples
-        of what Streamlit can do!
-        ### Want to learn more?
-        - Check out [streamlit.io](https://streamlit.io)
-        - Jump into our [documentation](https://docs.streamlit.io)
-        - Ask a question in our [community
-          forums](https://discuss.streamlit.io)
-        ### See more complex demos
-        - Use a neural net to [analyze the Udacity Self-driving Car Image
-          Dataset](https://github.com/streamlit/demo-self-driving)
-        - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
-    """
-    )
-
-
-if __name__ == "__main__":
-    run()
+st.write(''' 
+         Jika mendapati kesulitan selama menggunakan aplikasi ini, mohon kontak tim Research and Product Innovation FAC.
+        
+         Developer:
+         Ian (RPI) - aplikasi v1\
+        ''')
