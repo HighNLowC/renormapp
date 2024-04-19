@@ -3,7 +3,7 @@ import numpy  as np
 import streamlit as st
 
 # Page Config
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide",page_title="FAC Renorm App v1 - STAGE")
 
 # Header
 st.header('STAGE Renorm App')
